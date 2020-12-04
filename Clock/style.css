@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+/* body{
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -23,5 +25,71 @@ body{
     padding: 10px;
 }
 .clock div:last-child::after{
+    content: "";
+} */
+
+body{
+  font-family: 'Paytone One', sans-serif;
+  
+}
+.clock-container{
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #2D3E50;
+
+}
+
+.clock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+   
+}
+.clock:after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #2D3E50;
+    content: "";
+}
+
+.time{
+    height: 150px;
+    width: 150px;
+    margin:20px;
+    transform: translate(-30px);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16A086;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 80px;
+    letter-spacing: 5px;
+}
+.time:before {
+    position: absolute;
+    top: 46%;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background: #2D3E50;
+    content: "";
+}
+
+.time:after {
+    position: absolute;
+    top: 46%;
+    right: 0;
+    height: 15px;
+    width: 15px;
+    background: #2D3E50;
     content: "";
 }
